@@ -1,12 +1,12 @@
-let fs = require('fs');
-let moment = require('moment');
-let axios = require('axios');
+const fs = require('fs');
+const moment = require('moment');
+const axios = require('axios');
 
-let http = require('http')
+const http = require('http')
 
 http.createServer(function (req, res) {
 
-    res.writeHead(200, {'Content-Type': "text/plain"});
+    res.writeHead(200, {'Content-Type': "text/plain; chartset=utf-8"});
 
     switch (req.url) {
         case '/':
